@@ -1,0 +1,32 @@
+### “SISTEM MANAJEMEN PERPUSTAKAAN”
+
+#### C.1. Latar Belakang
+Perpustakaan kampus memiliki koleksi:
+- **Buku** – bisa dipinjam, bisa dicari berdasarkan judul/penulis.
+- **Majalah** – hanya bisa dicari, tidak dipinjam.
+- **DVD** – bisa dipinjam, bisa dicari.
+
+Setiap item memiliki ID, judul, tahun. Status item: Tersedia, Dipinjam (oleh siapa, tanggal), atau Hilang.
+
+Sistem harus mampu:
+- Menambah item ke koleksi.
+- Mencari item berdasarkan kata kunci.
+- Meminjam dan mengembalikan item yang borrowable.
+- Menampilkan daftar item tersedia dan dipinjam.
+- Menangani error (item tidak ditemukan, sudah dipinjam, dll).
+
+#### C.2. Tujuan Pembelajaran
+- Merancang **abstract class** dan **interface** secara kolaboratif.
+- Menerapkan **multiple interface** pada kelas yang berbeda.
+- Menggunakan **sealed class** untuk status item.
+- Menerapkan **generic** (Repository) dan **collection**.
+- Menerapkan **exception handling**.
+- Melatih **kolaborasi** dan **integrasi kode**.
+
+#### C.3. Pembagian Tugas Kelompok (3–4 Orang)
+| Peran | Tugas |
+|-------|-------|
+| **Renisa – Arsitek** | Mendesain abstract class `LibraryItem`, interface `Borrowable`, `Searchable`, sealed class `ItemStatus`. Membuat kerangka kelas. |
+| **Ajeng Az Zahra – Implementator Buku & Majalah** | Implementasi `Book` dan `Magazine`. |
+| **Shiva Nayla – Implementator DVD & Manager** | Implementasi `DVD` dan `LibraryManager` (Repository, operasi pinjam/cari). |
+| **Renisa Rahmawati – Integrator & Exception** | Membuat custom exception, exception handling, dan `main()` program. |
