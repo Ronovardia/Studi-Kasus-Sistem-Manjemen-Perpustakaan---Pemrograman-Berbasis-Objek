@@ -1,6 +1,6 @@
 ### “SISTEM MANAJEMEN PERPUSTAKAAN”
 
-#### C.1. Latar Belakang
+#### Latar Belakang
 Perpustakaan kampus memiliki koleksi:
 - **Buku** – bisa dipinjam, bisa dicari berdasarkan judul/penulis.
 - **DVD** – bisa dipinjam, bisa dicari.
@@ -14,7 +14,7 @@ Sistem harus mampu:
 - Menampilkan daftar item tersedia dan dipinjam.
 - Menangani error (item tidak ditemukan, sudah dipinjam, dll).
 
-#### C.2. Tujuan Pembelajaran
+#### Tujuan Pembelajaran
 - Merancang **abstract class** dan **interface** secara kolaboratif.
 - Menerapkan **multiple interface** pada kelas yang berbeda.
 - Menggunakan **sealed class** untuk status item.
@@ -22,7 +22,37 @@ Sistem harus mampu:
 - Menerapkan **exception handling**.
 - Melatih **kolaborasi** dan **integrasi kode**.
 
-#### C.3. Pembagian Tugas Kelompok 
+
+### Struktur File yang Disarankan
+```
+src/
+├── Main.kt
+├── model/
+│   ├── Employee.kt (individu)
+│   ├── LibraryItem.kt (kelompok)
+│   ├── interfaces/
+│   │   ├── Taxable.kt
+│   │   ├── BonusEligible.kt
+│   │   ├── Borrowable.kt
+│   │   └── Searchable.kt
+│   ├── status/
+│   │   ├── EmployeeStatus.kt
+│   │   └── ItemStatus.kt
+│   ├── subclasses/
+│   │   ├── FullTimeEmployee.kt
+│   │   ├── ContractEmployee.kt
+│   │   ├── Intern.kt
+│   │   ├── Book.kt
+│   │   ├── Magazine.kt
+│   │   └── DVD.kt
+│   └── manager/
+│       ├── Company.kt
+│       └── LibraryManager.kt
+└── exception/
+    └── CustomExceptions.kt
+```
+
+#### Pembagian Tugas Kelompok 
 | Nama | NIM | Tugas | Deskripsi |
 |-------|-------|-------|-------|
 | **Renisa Rahmawati** | 225443025 | **Arsitek dan Integrator & Exception** | Mendesain abstract class `LibraryItem`, interface `Borrowable`, `Searchable`, sealed class `ItemStatus`. Membuat kerangka kelas. Membuat custom exception, exception handling, dan `main()` program. |
