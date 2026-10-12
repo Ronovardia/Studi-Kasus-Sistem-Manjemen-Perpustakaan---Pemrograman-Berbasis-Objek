@@ -13,6 +13,15 @@ Setiap item memiliki **ID**, **judul**, dan **tahun**. Status item ada tiga:
 - **Dipinjam** (oleh siapa dan tanggal berapa)
 - **Hilang**
 
+## Tujuan Pembelajaran
+
+- Merancang **abstract class** dan **interface** secara kolaboratif.
+- Menerapkan **multiple interface** pada kelas yang berbeda.
+- Menggunakan **sealed class** untuk status item.
+- Menerapkan **generic** (`Repository`) dan **collection**.
+- Menerapkan **exception handling**.
+- Melatih **kolaborasi** dan **integrasi kode**.
+
 ## Fitur Sistem
 
 Sistem harus mampu:
@@ -22,15 +31,6 @@ Sistem harus mampu:
 3. Meminjam dan mengembalikan item yang *borrowable*.
 4. Menampilkan daftar item tersedia dan dipinjam.
 5. Menangani error (item tidak ditemukan, sudah dipinjam, dan lainnya).
-
-## Tujuan Pembelajaran
-
-- Merancang **abstract class** dan **interface** secara kolaboratif.
-- Menerapkan **multiple interface** pada kelas yang berbeda.
-- Menggunakan **sealed class** untuk status item.
-- Menerapkan **generic** (`Repository`) dan **collection**.
-- Menerapkan **exception handling**.
-- Melatih **kolaborasi** dan **integrasi kode**.
 
 ## Struktur File
 
