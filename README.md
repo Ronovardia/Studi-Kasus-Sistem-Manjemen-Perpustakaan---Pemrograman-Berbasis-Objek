@@ -25,7 +25,6 @@ Sistem harus mampu:
 #### C.3. Pembagian Tugas Kelompok 
 | Nama | NIM | Tugas | Deskripsi |
 |-------|-------|-------|-------|
-| **Renisa** | **Arsitek** | Mendesain abstract class `LibraryItem`, interface `Borrowable`, `Searchable`, sealed class `ItemStatus`. Membuat kerangka kelas. |
-| **Ajeng Az Zahra** | **Implementator Buku & Majalah** | Implementasi `Book` dan `Magazine`. |
-| **Shiva Nayla** | **Implementator DVD & Manager** | Implementasi `DVD` dan `LibraryManager` (Repository, operasi pinjam/cari). |
-| **Renisa Rahmawati** | **Integrator & Exception** | Membuat custom exception, exception handling, dan `main()` program. |
+| **Renisa Rahmawati** | 225443025 | **Arsitek dan Integrator & Exception** | Mendesain abstract class `LibraryItem`, interface `Borrowable`, `Searchable`, sealed class `ItemStatus`. Membuat kerangka kelas. Membuat custom exception, exception handling, dan `main()` program. |
+| **Ajeng Az Zahra** | 225443002 | **Implementator Buku & Majalah** | Implementasi `Book` dan `Magazine`. |
+| **Shiva Nayla** | 225443053 | **Implementator DVD & Manager** | Implementasi `DVD` dan `LibraryManager` (Repository, operasi pinjam/cari). |
